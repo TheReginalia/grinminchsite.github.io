@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bowl Knows</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            background-color: black;
+            color: white;
+            text-align: left;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .hidden-text {
+            font-size: 14px;
+            opacity: 0.2;
+        }
+
+        .glitch {
+            animation: glitch 2s infinite alternate;
+        }
+
+        @keyframes glitch {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(2px); color: red; }
+            100% { transform: translateX(-2px); color: white; }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="glitch">The Truth About Minch</h1>
+    <p>Minch was not always Minch. Xe was something else before Xe touched the bowl.</p>
+    <p>The bowl does not create. The bowl does not destroy. The bowl only knows.</p>
+    <p class="hidden-text">Find the bowl. 190.168.0.25</p>
+</body>
+</html>
