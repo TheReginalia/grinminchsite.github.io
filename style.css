@@ -47,6 +47,42 @@ p {
     font-size: 18px;
 }
 
+.flag-container {
+    display: flex;
+    justify-content: center; /* Centers the flag */
+    text-align: center;
+    font-size: 14px;
+    font-family: monospace; /* Ensures perfect alignment */
+    line-height: 1; /* Prevents spacing issues */
+}
+
+.flag-blue, .flag-white, .flag-red {
+    flex: 1; /* Ensures equal width */
+    white-space: pre; /* Preserves exact spacing */
+}
+
+.flag-blue {
+    background-color: rgba(3,42,95,255); /* Blue */
+    color: white;
+}
+
+.flag-white {
+    background-color: white; /* White */
+    color: black;
+}
+
+.flag-red {
+    background-color: rgba(237, 41, 57,255); /* Red */
+    color: white;
+}
+
+
+.inspiration {
+    display: flex;
+    justify-content: left;
+    max-width: 35%;
+}
+
 .carousel {
     display: flex;
     justify-content: center;
@@ -85,7 +121,20 @@ footer {
     color: #ff1a1a;
     padding: 10px;
     text-align: center;
-    position: absolute;
+    position: static;
     bottom: 0;
     width: 100%;
+}
+
+
+#heart {
+    font-family: monospace;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
 }

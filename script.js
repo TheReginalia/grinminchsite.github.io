@@ -16,3 +16,14 @@ images.forEach(image => {
         }, 1000); // Same duration as the CSS animation
     });
 });
+
+// Code for [REDACTED] access gate
+function checkCode() {
+    let userInput = prompt("Enter the 4-digit access code:");
+    
+    if (userInput === "1968") {
+        window.location.href = "redacted.html"; // Redirect if correct
+    } else {
+        alert("The bowl rejects your offering."); // Cryptic rejection message
+    }
+}
