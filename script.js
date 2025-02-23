@@ -1,3 +1,4 @@
+// Minch Image Spin Logic
 const images = document.querySelectorAll('.carousel-image');
 const audio = document.getElementById('minch-audio');
 
@@ -27,3 +28,13 @@ function checkCode() {
         alert("The bowl rejects your offering."); // Cryptic rejection message
     }
 }
+
+// Ban France and send them to the Duck Zone
+fetch("https://ipapi.co/json")
+    .then(response => response.json())
+    .then(data => {
+        if (data.country_code === "FR") {
+            window.location.href = "https://upload.wikimedia.org/wikipedia/commons/3/3a/Duck_at_Fondation_Mona_Bismarck.jpg";
+        }
+    })
+    .catch(error => console.error("Error detecting country:", error));
