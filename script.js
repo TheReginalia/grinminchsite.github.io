@@ -34,7 +34,7 @@ fetch("https://ipapi.co/json")
     .then(response => response.json())
     .then(data => {
         if (data.country_code === "FR") {
-            window.location.href = "https://upload.wikimedia.org/wikipedia/commons/3/3a/Duck_at_Fondation_Mona_Bismarck.jpg";
+            window.location.href = "https://commons.m.wikimedia.org/w/index.php?search=French+Duck&title=Special:MediaSearch&type=image";
         }
     })
     .catch(error => console.error("Error detecting country:", error));
