@@ -6,16 +6,6 @@ body, html {
     background-color: #fdf7e3;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to right, blue 33%, white 33%, white 66%, red 66%);
-    color: black;
-    font-size: 24px;
-}
-
 header {
     background-color: #ffd1dc;
     color: #ff1a1a;
@@ -57,7 +47,7 @@ p {
     font-size: 18px;
 }
 
-.flag-container {
+body.frebch .flag-container {
     display: flex;
     justify-content: center; /* Centers the flag */
     text-align: center;
@@ -66,22 +56,24 @@ p {
     line-height: 1; /* Prevents spacing issues */
 }
 
-.flag-blue, .flag-white, .flag-red {
+body.frebch .flag-blue,
+body.frebch .flag-white,
+body.frebch .flag-red {
     flex: 1; /* Ensures equal width */
     white-space: pre; /* Preserves exact spacing */
 }
 
-.flag-blue {
+body.frebch .flag-blue {
     background-color: rgba(3,42,95,255); /* Blue */
     color: white;
 }
 
-.flag-white {
+body.frebch .flag-white {
     background-color: white; /* White */
     color: black;
 }
 
-.flag-red {
+body.frebch .flag-red {
     background-color: rgba(237, 41, 57,255); /* Red */
     color: white;
 }

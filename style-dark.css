@@ -1,0 +1,17 @@
+body {
+    background-color: rgba(2,2,2,255);
+    overflow: hidden;
+}
+
+.tiny-minch {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    filter: brightness(200%);
+    animation: float 5s infinite alternate ease-in-out;
+}
+
+@keyframes float {
+    from { transform: translateY(0px); }
+    to { transform: translateY(20px); }
+}
