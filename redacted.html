@@ -1,22 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[REDACTED]</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main>
+<body onload="verifyCode()">
+    <script>
+        function verifyCode() {
+            let code = prompt("Enter the access code:");
+            if (code !== "1968") {
+                alert("Access Denied.");
+                window.location.href = "https://www.google.com/search?sca_esv=ebbf5209d20ead5b&sxsrf=AHTn8zpQZxYirLFS4C1za6kSjOupenx5Nw:1740276635764&q=pictures+of+ducks&udm=2&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBsxayPSIAqObp_AgjkUGqel41a-glE2Uq9eJ_Bs7HiCAYlFFGTExBAJINx8ozJBuW9tYgt7x4nGKBzIJLdcA_0du35JA7WotIj301qwlm-MI6XnPVA5h_sZG4-ikKpCqLqTrOyLtgYA77b8mnRSTrggaIFdb95JVTPAGmAzaZzaTm9Fw-w&sa=X&ved=2ahUKEwi0573V29iLAxWXHDQIHfZXKzcQtKgLegQIEBAB&biw=1920&bih=951&dpr=1"; // Redirects to nothingness
+            } else {
+                document.getElementById("content").style.display = "block";
+            }
+        }
+    </script>
+
+    <main id="content" style="display: none;">
         <h1>[REDACTED]</h1>
         <p>Choose wisely. Or don’t.</p>
-        
+
         <div class="redacted-links">
             <a href="lore.html">The Truth</a>
             <a href="floor-flavors.html">Floor Flavors</a>
             <a href="minch-after-dark.html">Minch After Dark</a>
-            <a href="coolmathgames.com">Advanced Learning</a>
-            <a href="google.com">Outsourcing Knowledge</a>
+            <a href="https://coolmathgames.com">Advanced Learning</a>
+            <a href="https://google.com">Outsourcing Knowledge</a>
             <a href="frebch.html">Frebch</a>
             <a href="love.html">Seek Connection</a>
             <a href="redacted.html">Infinite Loop</a>
@@ -30,4 +34,3 @@
         </div>
     </main>
 </body>
-</html>
