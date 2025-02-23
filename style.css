@@ -78,6 +78,9 @@ body.frebch .flag-red {
     color: white;
 }
 
+.hidden-number {
+    color: #ffdc6a;
+}
 
 .inspiration {
     display: flex;
@@ -140,3 +143,36 @@ footer {
     transform: translate(-50%, -50%);
     transition: transform 0.1s ease-out;
 }
+
+.minch-chamber {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.minch-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.spinning-minch {
+    width: 100%;
+    height: 100%;
+    animation: spin 3s linear infinite, distort 10s ease-in-out infinite alternate;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes distort {
+    0% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.1) rotate(5deg); }
+    100% { transform: scale(0.9) rotate(-5deg); }
+}
+
